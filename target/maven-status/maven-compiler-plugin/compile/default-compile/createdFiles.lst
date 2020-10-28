@@ -1,0 +1,16 @@
+supplier/entities/dto/ItemDTO.class
+supplier/entities/dto/SupplyDTO.class
+supplier/entities/Item.class
+supplier/controllers/SupplierController.class
+supplier/entities/dto/ItemsDTO.class
+supplier/services/SupplierService.class
+supplier/services/ItemService.class
+supplier/entities/Storage.class
+supplier/repo/SupplierRepository.class
+supplier/repo/StorageRepository.class
+supplier/config/AppConfig.class
+supplier/services/StorageService.class
+supplier/repo/ItemRepository.class
+supplier/DemoApplication.class
+supplier/controllers/ItemController.class
+supplier/entities/Supplier.class

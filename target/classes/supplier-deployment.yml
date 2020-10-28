@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: suppliers13
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: suppliers13
+  template:
+    metadata:
+      labels:
+        app: suppliers13
+    spec:
+      containers:
+        - image: marafiievychmariia/suppliers13
+          name: suppliers13
+          ports:
+            - containerPort: 8082
+              name: suppliers13
+          env:
+            - name: POSTGRES_ENDPOINT
+              value: "jdbc:postgresql://192.168.0.177:5434/"
+            - name: POSTGRES_PASSWORD
+              value: "password"
+            - name: POSTGRES_USERNAME
+              value: "postgres"

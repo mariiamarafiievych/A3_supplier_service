@@ -1,0 +1,16 @@
+/Users/mariamaraphiyevich/IdeaProjects/A3/A3_supplier_service/src/main/java/supplier/repo/SupplierRepository.java
+/Users/mariamaraphiyevich/IdeaProjects/A3/A3_supplier_service/src/main/java/supplier/controllers/SupplierController.java
+/Users/mariamaraphiyevich/IdeaProjects/A3/A3_supplier_service/src/main/java/supplier/services/SupplierService.java
+/Users/mariamaraphiyevich/IdeaProjects/A3/A3_supplier_service/src/main/java/supplier/repo/StorageRepository.java
+/Users/mariamaraphiyevich/IdeaProjects/A3/A3_supplier_service/src/main/java/supplier/services/ItemService.java
+/Users/mariamaraphiyevich/IdeaProjects/A3/A3_supplier_service/src/main/java/supplier/services/StorageService.java
+/Users/mariamaraphiyevich/IdeaProjects/A3/A3_supplier_service/src/main/java/supplier/entities/Storage.java
+/Users/mariamaraphiyevich/IdeaProjects/A3/A3_supplier_service/src/main/java/supplier/entities/dto/SupplyDTO.java
+/Users/mariamaraphiyevich/IdeaProjects/A3/A3_supplier_service/src/main/java/supplier/DemoApplication.java
+/Users/mariamaraphiyevich/IdeaProjects/A3/A3_supplier_service/src/main/java/supplier/repo/ItemRepository.java
+/Users/mariamaraphiyevich/IdeaProjects/A3/A3_supplier_service/src/main/java/supplier/entities/Item.java
+/Users/mariamaraphiyevich/IdeaProjects/A3/A3_supplier_service/src/main/java/supplier/entities/dto/ItemsDTO.java
+/Users/mariamaraphiyevich/IdeaProjects/A3/A3_supplier_service/src/main/java/supplier/entities/Supplier.java
+/Users/mariamaraphiyevich/IdeaProjects/A3/A3_supplier_service/src/main/java/supplier/entities/dto/ItemDTO.java
+/Users/mariamaraphiyevich/IdeaProjects/A3/A3_supplier_service/src/main/java/supplier/config/AppConfig.java
+/Users/mariamaraphiyevich/IdeaProjects/A3/A3_supplier_service/src/main/java/supplier/controllers/ItemController.java
