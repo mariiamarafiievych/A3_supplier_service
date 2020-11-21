@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: db-supplier-new
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: db-supplier-new
+  template:
+    metadata:
+      labels:
+        app: db-supplier-new
+    spec:
+      containers:
+        - env:
+            - name: POSTGRES_DB
+              value: supplier_db
+            - name: POSTGRES_PASSWORD
+              value: "password"
+            - name: POSTGRES_USER
+              value: postgres
+          image: postgres
+          imagePullPolicy: IfNotPresent
+          name: db-supplier-new
+          ports:
+            - containerPort: 5432

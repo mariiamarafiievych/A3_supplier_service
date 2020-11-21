@@ -40,10 +40,14 @@ public class SupplierController {
 
     @PostMapping
     public ResponseEntity<Void> ItemsFromSupplier(@RequestBody String serveJson){
+        System.out.println("serveJson !!!!!!!!!!!!" +serveJson);
         Gson gson = new GsonBuilder().disableHtmlEscaping().create();
         SupplyDTO serve = gson.fromJson(serveJson, SupplyDTO.class);
+        System.out.println("serve!!!!!!!!!!!"+serve);
         List<Item> toStorage = serve.getItems();
+        System.out.println("toStorage !!!!!!!!!!"+toStorage);
         List<Integer> itemQuantities = serve.getItemQuantities();
+
         Supplier jsonSupplier = serve.getSupplier();
         Supplier supplier = supplierService.findSupplierByName(jsonSupplier.getFirstName(), jsonSupplier.getLastName());
         for(Item th: toStorage){
