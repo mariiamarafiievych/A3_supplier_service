@@ -1,0 +1,45 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package com.example.seller;
+
+message ProtoSupplier {
+  string firstName = 1;
+  string lastName = 2;
+}
+
+message ProtoItem {
+  string name = 1;
+  double price = 2;
+}
+
+message GetRequestSupplier{
+
+}
+
+message GetResponseSupplier {
+  repeated ProtoSupplier suppliers = 1;
+}
+
+
+message GetRequestItem{
+
+}
+
+message GetResponseItem {
+  repeated ProtoItem items = 1;
+}
+
+
+message CreateRequest{
+  string serveJson = 1;
+}
+
+message CreateResponse {
+}
+
+
+service supplierService {
+  rpc getSuppliers(GetRequestSupplier) returns (GetResponseSupplier);
+  rpc getThings(GetRequestItem) returns (GetResponseItem);
+  rpc create(CreateRequest) returns (CreateResponse);
+}

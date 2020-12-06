@@ -1,10 +1,10 @@
-package supplier.config;
+package com.example.supplier.config;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import supplier.entities.Supplier;
-import supplier.repo.SupplierRepository;
+import com.example.supplier.entities.Supplier;
+import com.example.supplier.repo.SupplierRepository;
 
 import java.util.UUID;
 

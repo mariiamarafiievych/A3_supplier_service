@@ -1,11 +1,11 @@
-package supplier.services;
+package com.example.supplier.services;
 
 import javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import supplier.entities.Item;
-import supplier.repo.ItemRepository;
+import com.example.supplier.entities.Item;
+import com.example.supplier.repo.ItemRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -39,7 +39,7 @@ public class ItemService {
 
     @Transactional
     public List<Item> getItems(){
-        return itemRepository.findAll();
+        return itemRepository.getItemsInStock();
     }
 
     @Transactional

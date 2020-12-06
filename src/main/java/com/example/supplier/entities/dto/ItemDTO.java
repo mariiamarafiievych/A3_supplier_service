@@ -1,4 +1,4 @@
-package supplier.entities.dto;
+package com.example.supplier.entities.dto;
 
 import java.util.UUID;
 

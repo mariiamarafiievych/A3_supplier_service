@@ -1,14 +1,14 @@
-package supplier.services;
+package com.example.supplier.services;
 
 import javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import supplier.entities.Item;
-import supplier.entities.Storage;
-import supplier.entities.Supplier;
-import supplier.repo.StorageRepository;
-import supplier.repo.SupplierRepository;
+import com.example.supplier.entities.Item;
+import com.example.supplier.entities.Storage;
+import com.example.supplier.entities.Supplier;
+import com.example.supplier.repo.StorageRepository;
+import com.example.supplier.repo.SupplierRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -30,6 +30,10 @@ public class SupplierService {
         return supplierRepository.findSupplierByName(firstName, lastName);
     }
 
+    @Transactional
+    public void save(Supplier supplier){
+        supplierRepository.save(supplier);
+    }
 
     @Transactional
     public void addItemsToStorage(Supplier supplier, List<Item> toStorage, List<Integer> itemQuantities){

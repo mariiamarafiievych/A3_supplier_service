@@ -1,4 +1,4 @@
-package supplier.entities;
+package com.example.supplier.entities;
 
 
 import com.fasterxml.jackson.annotation.JsonBackReference;

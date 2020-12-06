@@ -1,15 +1,15 @@
-package supplier.controllers;
+package com.example.supplier.controllers.rest;
 
 
+import com.example.supplier.entities.dto.ItemDTO;
+import com.example.supplier.services.StorageService;
 import javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import supplier.entities.Item;
-import supplier.entities.Storage;
-import supplier.entities.dto.ItemDTO;
-import supplier.services.ItemService;
-import supplier.services.StorageService;
+import com.example.supplier.entities.Item;
+import com.example.supplier.entities.Storage;
+import com.example.supplier.services.ItemService;
 
 import java.util.List;
 import java.util.UUID;

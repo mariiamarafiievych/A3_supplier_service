@@ -1,11 +1,11 @@
-package supplier.services;
+package com.example.supplier.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import supplier.entities.Item;
-import supplier.entities.Storage;
-import supplier.repo.StorageRepository;
+import com.example.supplier.entities.Item;
+import com.example.supplier.entities.Storage;
+import com.example.supplier.repo.StorageRepository;
 
 @Service
 public class StorageService {

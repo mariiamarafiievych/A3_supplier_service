@@ -5,8 +5,11 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-    - name: "supplier-service-new"
-      port: 8082
-      targetPort: 8082
+    - name: rest
+        port: 8082
+        targetPort: 8082
+    - name: grpc
+        port: 9093
+        targetPort: 9093
   selector:
     app: supplier-service-new

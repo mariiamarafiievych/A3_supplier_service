@@ -1,8 +1,8 @@
-package supplier.entities.dto;
+package com.example.supplier.entities.dto;
 
 
-import supplier.entities.Item;
-import supplier.entities.Supplier;
+import com.example.supplier.entities.Item;
+import com.example.supplier.entities.Supplier;
 
 import java.util.List;
 

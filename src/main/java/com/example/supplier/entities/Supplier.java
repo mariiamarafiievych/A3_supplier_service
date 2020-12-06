@@ -1,6 +1,6 @@
-package supplier.entities;
+package com.example.supplier.entities;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -14,7 +14,7 @@ public class Supplier {
     private UUID id;
     private String firstName;
     private String lastName;
-    @JsonBackReference
+    @JsonProperty(access = JsonProperty.Access.READ_WRITE)
     @OneToMany(mappedBy = "addedBy")
     private List<Item> addedItems;
 
