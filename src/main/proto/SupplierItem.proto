@@ -40,6 +40,6 @@ message CreateResponse {
 
 service supplierService {
   rpc getSuppliers(GetRequestSupplier) returns (GetResponseSupplier);
-  rpc getThings(GetRequestItem) returns (GetResponseItem);
+  rpc getItems(GetRequestItem) returns (GetResponseItem);
   rpc create(CreateRequest) returns (CreateResponse);
 }
